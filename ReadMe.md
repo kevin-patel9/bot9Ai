@@ -23,8 +23,8 @@ deleteChatBot (DELETE) - http://localhost:4949/api/v1/chatbot/deleteBot/:chatbot
 
 
 Conversation:
-<!-- *chatBotId is mongoId -->
-<!-- *conversationId is specific chat message mongoId -->
+*chatBotId is mongoId
+*conversationId is specific chat message mongoId
 
 startConversation (POST) - http://localhost:4949/api/v1/conversation/startConversation/:chatbotId/conversations
 getAllConversation (GET) - http://localhost:4949/api/v1/conversation/getAllConversation/:chatbotId/conversations
@@ -33,7 +33,7 @@ updateConversation (PATCH) - http://localhost:4949/api/v1/conversation/updateCon
 deleteConversation (DELETE) - http://localhost:4949/api/v1/conversation/deleteConversation/:conversationId
 
 EndUser: 
-<!-- *endUserId is same as chatBotId but in this api it only retreives endUser data -->
+*endUserId is same as chatBotId but in this api it only retreives endUser data
 
 createEndUser - (POST) - http://localhost:4949/api/v1/endusers/registerEnduser
     *ADD name and email only*
@@ -46,8 +46,8 @@ deleteEndUser - (DELETE) - http://localhost:4949/api/v1/endusers/deleteEnduser/:
 
 */ Search chatBots with their ownerId
 
-<!-- We can search by any words with same userId stored in chatBot ownerId-->
+*/ We can search by any words with same userId stored in chatBot ownerId /*
 searchChatBots - (GET) - http://localhost:4949/api/v1/chatbot/searchChatBot/:userId
 
-<!-- ?page=1&pageSize=10 we can store number in frontend to retreive -->
+*/ ?page=1&pageSize=10 we can store number in frontend to retreive */
 botsPagination - (GET) - "http://localhost:4949/api/v1/chatbot/getAllUserBots/:userId/chatbots?page=1&pageSize=10"
