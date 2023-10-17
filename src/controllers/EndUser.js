@@ -143,6 +143,7 @@ exports.deleteEndUser = async(req, res) => {
             })
         }
 
+        // when endUser deleted (detach chatbot connect to it)
         const chatbot = await ChatBot.findById(req.params.endUserId);
 
         chatbot.chatBotInUse = false;

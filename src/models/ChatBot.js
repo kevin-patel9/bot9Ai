@@ -6,7 +6,7 @@ const chatBotSchema = new mongoose.Schema({
         index: true,
     },
     chatBotInUse: {
-        type: Boolean, // if endUser is not connected
+        type: Boolean, // if endUser is not connected (not in use, "type" = false)
         default: false
     }
 

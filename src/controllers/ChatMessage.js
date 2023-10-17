@@ -58,6 +58,7 @@ exports.getAllMessageInConversation = async (req, res) => {
     }
 }
 
+// get specific (single) message
 exports.getSpecificMessageInConversation = async (req, res) => {
     try {
         const { conversationId } = req.params;
@@ -84,6 +85,7 @@ exports.getSpecificMessageInConversation = async (req, res) => {
     }
 }
 
+// can edit (single) message
 exports.updateConversation = async (req, res) => {
     try {
         const { conversationId } = req.params;
@@ -119,6 +121,7 @@ exports.updateConversation = async (req, res) => {
     }
 }
 
+// delete single message
 exports.deleteConversation = async (req, res) => {
     try {
         const { conversationId } = req.params;
