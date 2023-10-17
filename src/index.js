@@ -17,7 +17,7 @@ const chatMessage = require("./routes/ChatMessage");
 
 app.use("/api/v1/user", user);
 app.use("/api/v1/chatbot", chatBot);
-app.use("/api/v1/enduser", enduser);
+app.use("/api/v1/endusers", enduser);
 app.use("/api/v1/conversation", chatMessage);
 
 module.exports = app;

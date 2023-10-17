@@ -34,6 +34,7 @@ deleteConversation (DELETE) - http://localhost:4949/api/v1/conversation/deleteCo
 
 EndUser: 
 *endUserId is same as chatBotId but in this api it only retreives endUser data
+*endUserId is mongoId
 
 createEndUser - (POST) - http://localhost:4949/api/v1/endusers/registerEnduser
     *ADD name and email only*
